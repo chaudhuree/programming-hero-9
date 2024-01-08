@@ -133,6 +133,7 @@ img {
   font-weight: 600;
   line-height: 56px;
   text-transform: capitalize;
+  border-radius: 16px;
 }
 .announcement__textbox__topic {
   color: #f00;
@@ -295,10 +296,123 @@ img {
 
 /* newsletter */
 .newsletter {
-  width: 82.5%;
   margin: 60px auto;
   text-align: center;
   border-radius: 16px;
   background: rgba(255, 0, 0, 0.05);
   padding: 80px 0;
+}
+.newsletter__icon img {
+  width: 150px;
+  height: 150px;
+}
+.newsletter__heading {
+  color: #070211;
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: capitalize;
+  margin: 22px 0;
+}
+.newsletter__description {
+  color: rgba(7, 2, 17, 0.6);
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.newsletter__form {
+  margin: auto;
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 648px;
+}
+.newsletter__form input {
+  padding: 25px 195px 25px 30px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border: none;
+}
+.newsletter__form button {
+  padding: 21px 56px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: none;
+  background-color: #f00;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.newsletter__form input::placeholder {
+  color: rgba(7, 2, 17, 0.3);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+}
+/* footer */
+footer {
+  margin-top: 60px;
+  font-family: Inter;
+  background: #070211;
+  padding: 120px 140px;
+
+  color: #fff;
+}
+.row-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.row-top__left,
+.row-top__right {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+}
+.row-top__left{
+  flex: 1;
+}
+.row-top__right {
+  width: 32%;
+
+}
+.row-top__right span {
+  padding-left: 10px;
+}
+.divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 40px 0;
+  border-color: rgba(255, 255, 255, 0.15);
+
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+.social-links img {
+  width: 64px;
+  height: 64px;
+}
+.row-bottom {
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.row-bottom a:link{
+  color: #fff;
+  text-decoration: none;
 }
