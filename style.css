@@ -152,3 +152,92 @@ img {
   margin-top: 32px;
   cursor: pointer;
 }
+/* new year section */
+.new-year-offer {
+  width: 82.5%;
+  margin: 60px auto;
+  font-family: Inter;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.new-year-offer__left-section,
+.new-year-offer__middle-section .new-year-offer__right-section {
+  width: 30%;
+  text-align: left;
+  font-family: Inter;
+  color: #070211;
+}
+.new-year-offer__subtitle {
+  color: #f00;
+  font-size: 24px;
+  font-weight: 500;
+}
+.new-year-offer__heading {
+  font-family: Merriweather;
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: capitalize;
+  margin: 10px 0;
+}
+.new-year-offer__description {
+  color: #07021199;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  width: 393px;
+}
+.new-year-offer__middle-section {
+  display: block;
+  text-align: center;
+}
+.new-year-offer__figure > img {
+  width: 50% !important;
+  outline-offset: 15px;
+  outline: 8px solid #ff0000;
+  border-radius: 50%;
+}
+.new-year-offer__year {
+  color: #f00;
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 700;
+  width: 276px;
+}
+.new-year-offer__right-section > .new-year-offer__description {
+  margin: 10px 0;
+}
+.new-year-offer__thumb {
+  width: 140px;
+  height: 140px;
+}
+
+/* holliday offer */
+.holliday-offer {
+  width: 82.5%;
+  margin: 60px auto;
+  font-family: Inter;
+  color: #070211;
+  font-family: Inter;
+  font-weight: 500;
+  text-align: center;
+}
+
+.holliday-offer__subtitle {
+  font-size: 24px;
+}
+.holliday-offer__heading {
+  font-family: Merriweather;
+  font-size: 72px;
+  font-weight: 900;
+  margin: 28px 0;
+}
+.holliday-offer__heading > span {
+  color: #f00;
+}
+.holliday-offer__description {
+  color: #07021199;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+}
