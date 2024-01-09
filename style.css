@@ -242,7 +242,47 @@ img {
   line-height: 32px;
   text-align: center;
 }
+
+
+
+
+
 /* discount */
+.discount {
+  width: 82.5%;
+  margin: 60px auto;
+  /* min-height: 600px; */
+  
+}
+.top-box{
+  display: flex;
+  justify-content: flex-end;
+  /* background-color: red; */
+}
+.img-box{
+  position: relative;
+}
+.img-box__supbox{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+/* .bottom-box{
+  background-color: blue;
+} */
+
+.img-bottom{
+  position: relative
+}
+.sup-box{
+  position: absolute;
+  top: -155%;
+  left: 6%;
+  width: 50%;
+}
+
 /* portfolio */
 .portfolio {
   width: 82.5%;
@@ -329,7 +369,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 648px;
+  max-width: 648px;
 }
 .newsletter__form input {
   padding: 25px 195px 25px 30px;
