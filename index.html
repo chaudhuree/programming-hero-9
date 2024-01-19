@@ -3,189 +3,398 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New Year Celebration</title>
-    <!-- fronts -->
+    <title>Document</title>
+    <!-- front -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Merriweather:wght@400;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- stylesheet -->
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="container">
-      <div class="hero">
-        <p class="hero__subtitle">Happy New Year</p>
-        <h1 class="hero__title">New Year Party Celebration</h1>
+    <!-- header section -->
+    <header>
+      <div class="container pb-50">
+        <nav>
+          <div class="icon">
+            <img src="./Images/icon.png" alt="nav icon" />
+            <p>Edge <span>Tour</span></p>
+          </div>
+          <ul class="full__nav">
+            <li class="icon__link"><a href="#">Home</a></li>
+            <li class="icon__link"><a href="#">Packages</a></li>
+            <li class="icon__link"><a href="#">Testimonial</a></li>
+            <li class="icon__link"><a href="#">Blog</a></li>
+            <li class="icon__link"><a href="#">Contact</a></li>
+          </ul>
+          <div class="mobile__nav__icon">
+            <img src="Images/humburger.svg" alt="" />
+          </div>
+        </nav>
+        <div class="header__banner">
+          <div class="banner__content">
+            <h1>Explore Your Travel</h1>
+            <p>
+              Discover Your World: Where Every Destination Tells a Tale, and
+              Each Adventure Echoes in Your Heart. Let Your Journeys Craft the
+              Chapters of Your Life.
+            </p>
+
+            <div class="input__box">
+              <form class="input__box__form">
+                <input type="text" placeholder="Where go" />
+
+                <select type="text">
+                  <option disabled>When</option>
+                  <option value="1">This Week</option>
+                  <option value="2">This Month</option>
+                  <option value="3">Next Month</option>
+                  <option value="4">Next Year</option>
+                </select>
+
+                <select type="text">
+                  <option disabled>Select Type</option>
+                  <option value="1">Adventure</option>
+                  <option value="2">Family</option>
+                  <option value="3">Solo</option>
+                </select>
+
+                <button class="button--primary"><i class="fa-solid fa-magnifying-glass"></i> Find Now</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
+
+    <!-- main section -->
     <main class="container">
-      <article class="promo">
-        <div class="promo__description">
-          <h2 class="promo__description__offer">65% OFF</h2>
-          <p class="promo__description__text">OUR HOLIDAY DEALS ARE BETTER</p>
-          <h3 class="promo__description__heading">ALL CATEGORIES</h3>
+      <!-- atricle section -->
+      <article class="article__popular pb-50 pt-50">
+        <div class="article__popular__textbox">
+          <h3>Our Popular Tours</h3>
+          <p>
+            Embark on a journey with us and explore the wonders of our popular tour. Immerse yourself in breathtaking landscapes and indulge in rich cultural experiences. 
+          </p>
+          <ul>
+            <li>
+              Uncover diverse landscapes and cultural gems on our popular tour.
+            </li>
+            <li>
+              Indulge in a tapestry of local flavors and traditions, as our expertly crafted itinerary takes you on a journey.
+            </li>
+            <li>
+              Join us on this odyssey, where each destination unfolds as a unique chapter, promising not just a vacation but an unforgettable experience.
+            </li>
+          </ul>
+          <p>
+            Embark on our captivating tour, an immersive journey through diverse landscapes and cultural wonders. Indulge in local flavors, creating vibrant memories in each destination, ensuring an unforgettable travel experience.
+          </p>
+          <div><button class="button--primary">Read More</button></div>
         </div>
-        <div class="promo__image">
+        <div class="article__popular__imagebox">
           <figure>
-            <img src="assets/New Year Photo.png" alt="new year photo" />
+            <img src="./Images/Rectangle 4.png" alt="popular" />
           </figure>
         </div>
       </article>
-      <section class="welcome">
-        <div class="welcome__description">
-          <div class="welcome__heading">Welcome to midnight party</div>
-          <div class="welcome__text">
-            Dolor sit amet consectetur. Consequat eget consectetur maecenas sed
-            molestie malesuada. Ipsum sed sodales risus ut pellentesque vel
-            euismod.
-          </div>
-          <div class="welcome__button--ghost">Join Now</div>
+      <!-- portfolio section -->
+      <section class="portfolio">
+        <div class="portfolio__textbox">
+          <h3>Choose Your Destination</h3>
+          <p>
+            Select your dream destination and embark on a captivating journey, exploring diverse landscapes and creating lasting memories along the way.
+          </p>
         </div>
-        <div class="welcome__figure">
-          <img src="./assets/Group 70.png" alt="" />
+        <div class="portfolio__gallery">
+          <div class="a">
+            <img
+              class="portfolio__img"
+              src="./Images/Rectangle 5.png"
+              alt="Maldives"
+            />
+            <p>Maldives</p>
+          </div>
+          <div class="b">
+            <img
+              class="portfolio__img"
+              src="./Images/Rectangle 8.png"
+              alt="Indonesia"
+            />
+            <p>Indonesia</p>
+          </div>
+          <div class="c">
+            <img
+              class="portfolio__img"
+              src="./Images/Rectangle 6.png"
+              alt="Srilanka"
+            />
+            <p>Srilanka</p>
+          </div>
+          <div class="d">
+            <img
+              class="portfolio__img"
+              src="./Images/Rectangle 7.png"
+              alt="North America"
+            />
+            <p>North America</p>
+          </div>
+          <div class="e">
+            <img
+              class="portfolio__img"
+              src="./Images/Rectangle 9.png"
+              alt="Kasmir"
+            />
+            <p>Kasmir</p>
+          </div>
+          <div class="f">
+            <img
+              class="portfolio__img"
+              src="./Images/Rectangle 11.png"
+              alt="Bangladesh"
+            />
+            <p>Bangladesh</p>
+          </div>
+          <div class="g">
+            <img
+              class="portfolio__img"
+              src="./Images/Group 40089.png"
+              alt="Bandarban"
+            />
+            <p>Bandarban</p>
+          </div>
         </div>
       </section>
-      <div class="announcement">
-        <div class="announcement__textbox">
-          <h3>
-            <span class="announcement__textbox__topic">Place:</span>New Park
-            Hotel
-          </h3>
-          <h3>
-            <span class="announcement__textbox__topic">Date:</span>31 December
-            Night 2023
-          </h3>
-          <h3>
-            <span class="announcement__textbox__topic">Time:</span>Evening 7.30
-            pm to 12.30 am
-          </h3>
-        </div>
-        <div class="announcement__button">
-          <button class="announcement__button--danger">Join Now</button>
-        </div>
-      </div>
-      <div class="new-year-offer">
-        <div class="new-year-offer__left-section">
-          <h4 class="new-year-offer__subtitle">NEW BEST OFFER</h4>
-          <h2 class="new-year-offer__heading">Coming Soon</h2>
-          <p class="new-year-offer__description">
-            Dolor sit amet consectetur. Consequat eget consectetur maecenas sed
-            molestie malesuada. Ipsum sed sodales risus ut pellentesque vel
-            euismod.
+      <!-- why us -->
+      <section class="why__us pt-50 pb-50">
+        <div class="why__us__textbox">
+          <h3>Why Choose Us</h3>
+          <p>
+            Choose us for a seamless blend of expertly curated experiences, personalized service, and unforgettable moments that redefine your travels.
           </p>
         </div>
-        <div class="new-year-offer__middle-section">
-          <figure class="new-year-offer__figure">
-            <img src="assets/Ellipse 1.png" alt="" />
-          </figure>
+        <div class="our__service">
+          <div class="service__box">
+            <img src="./Images/hotel.svg" alt="" />
+            <h3>Handpicked Hotels</h3>
+            <p>
+              Discover comfort and luxury at our hotel, offering stylish accommodations, modern amenities, exceptional service, and a central location for an unforgettable stay.
+            </p>
+          </div>
+          <div class="service__box">
+            <img src="./Images/map.svg" alt="" />
+            <h3>Handpicked Hotels</h3>
+            <p>
+              Discover comfort and luxury at our hotel, offering stylish accommodations, modern amenities, exceptional service, and a central location for an unforgettable stay.
+            </p>
+          </div>
+          <div class="service__box">
+            <img src="./Images/price.svg" alt="" />
+            <h3>Handpicked Hotels</h3>
+            <p>
+              Discover comfort and luxury at our hotel, offering stylish accommodations, modern amenities, exceptional service, and a central location for an unforgettable stay.
+            </p>
+          </div>
         </div>
-        <div class="new-year-offer__right-section">
-          <h2 class="new-year-offer__year">2024</h2>
-          <p class="new-year-offer__description">
-            Dolor sit amet consectetur. Consequat eget consectetur maecenas sed.
+      </section>
+      <!-- deals and discount section -->
+      <section class="discount pt-50 pb-50">
+        <div class="discount__textbox">
+          <h3>Deals & Discounts</h3>
+          <p>
+            Unlock exclusive deals and discounts, ensuring affordability without compromising on quality, making your travel experience both enjoyable and budget-friendly.
           </p>
-          <figure class="new-year-offer__thumb">
-            <img src="assets/Group 96.png" alt="" />
-          </figure>
         </div>
-      </div>
-      <div class="holliday-offer">
-        <h4 class="holliday-offer__subtitle">WHAT IS FUNCTIONAL</h4>
-        <h1 class="holliday-offer__heading"><span>Holidays</span> Sale 50%</h1>
-        <p class="holliday-offer__description">
-          Dolor sit amet consectetur. Consequat eget consectetur maecenas sed<br />
+        <div class="discount__gallery">
+          <div class="deals__basic">
+            <div class="deals__box">
+              <div class="pack__details">
+                <div class="time_table">
+                  <i class="fa-regular fa-clock"></i
+                  ><span>7 Day / 6 Night</span>
+                </div>
+                <div class="max">
+                  <i class="fa-solid fa-users"></i><span>Max : 10</span>
+                </div>
+                <div class="location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Malaysia</span>
+                </div>
+              </div>
+              <div class="details__text">
+                <h3>Tour To Satorini</h3>
+                <p>
+                  Discover a picturesque haven, where serenity meets beauty, creating a perfect escape to unwind and create lasting memories.
+                </p>
+                <h4>Price: $1300-$1500</h4>
+              </div>
+              <div>
+                <button class="button--primary">Book Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="deals__basic premium">
+            <div class="deals__box">
+              <div class="pack__details">
+                <div class="time_table">
+                  <i class="fa-regular fa-clock"></i
+                  ><span>7 Day / 6 Night</span>
+                </div>
+                <div class="max">
+                  <i class="fa-solid fa-users"></i><span>Max : 10</span>
+                </div>
+                <div class="location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Malaysia</span>
+                </div>
+              </div>
+              <div class="details__text">
+                <h3>Tour To Satorini</h3>
+                <p>
+                  Experience enchantment in a scenic paradise. A nice place where nature's beauty intertwines with tranquility, offering an idyllic retreat.
+                </p>
+                <h4>Price: $1300-$1500</h4>
+              </div>
+              <div>
+                <button class="button--primary">Book Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="deals__basic">
+            <div class="deals__box">
+              <div class="pack__details">
+                <div class="time_table">
+                  <i class="fa-regular fa-clock"></i
+                  ><span>7 Day / 6 Night</span>
+                </div>
+                <div class="max">
+                  <i class="fa-solid fa-users"></i><span>Max : 10</span>
+                </div>
+                <div class="location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Malaysia</span>
+                </div>
+              </div>
+              <div class="details__text">
+                <h3>Tour To Satorini</h3>
+                <p>
+                  Immerse yourself in the allure of a charming locale. A nice place that captivates with its beauty and promises unforgettable moments.
+                </p>
+                <h4>Price: $1300-$1500</h4>
+              </div>
+              <div>
+                <button class="button--primary">Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="button--primary discount__button">
+          See All Packages
+        </button>
+      </section>
+      <!-- customer review section -->
+      <section class="review  pb-50">
+        <i class=" left-side fa-solid fa-angle-left"></i>
+        <i class="fa-solid right-side fa-angle-right"></i>
+        <div class="discount__textbox">
+          <h3>What People Says About Us</h3>
+          <p>
+            Hear from our delighted customers as they share their memorable experiences, making us your trusted choice
+          </p>
+        </div>
+        <img
+          src="https://media.istockphoto.com/id/1485546774/photo/bald-man-smiling-at-camera-standing-with-arms-crossed.jpg?s=1024x1024&w=is&k=20&c=zvw6qDmYHmIvvCbEn2ZUF0tdSbKPnEWRsVAzd9g4hCM="
+          alt=""
+        />
+        <p class="desc">
+          “This theme have great custommer support team than will always try to
+          help me whenever I have trouble on implementing. this theme also have
+          general feature for tour”
+        </p>
+        <h3 class="name">BAYUNURAJI</h3>
+        <p class="pos">CUSTOMER</p>
+      </section>
+      <!-- video showcase section -->
+      <article class="article__popular pb-50 pt-50">
+        <div class="article__popular__textbox">
+          <h3>A Simple Perfect Place To Get Lost</h3>
+          <p>
+            Explore scenic beauty, rich culture, and vibrant experiences in this charming destination—a perfect retreat for unforgettable travel memories.
+          </p>
+          <ul class="video__showcase-list">
+            <li>
+              Explore scenic beauty, rich culture, and vibrant experiences in this charming destination—a perfect retreat for unforgettable travel memories.
+            </li>
+            <li>
+              Explore scenic beauty, rich culture, and vibrant experiences in this charming destination—a perfect retreat for unforgettable travel memories.
+            </li>
+          </ul>
 
-          molestie malesuada. Ipsum sed 
-          sodales risus ut pellentesque vel
-          euismod. Eleifend nunc purus quam id 
-          <br>fermentum amet amet sit
-          consectetur.
-        </p>
-      </div>
-      <!-- todo -->
-      <div class="discount">
-        <div class="top-box">
-          <div class="img-box">
-            <img class="img-box__model" src="./assets/Rectangle 1.png" alt="" />
-            <img class="img-box__supbox" src="./assets/Group 44.png" alt="">
+          <div><button class="button--primary">See More</button></div>
+        </div>
+        <div class="article__popular__imagebox">
+          <figure class="video--box">
+            <video
+              class="video"
+              poster="./Images/Group 40089.png"
+              controls
+            ></video>
+            <p>Watch Our Mountain in Bangladesh</p>
+          </figure>
+        </div>
+      </article>
+      <!-- newsletter section -->
+      <section class="newsletter pt-50 pb-50">
+        <div class="newsletter_form_box">
+          <h3>Newsletter</h3>
+          <p>Get your daily dose of travel news & tips. Sign up today!</p>
+          <hr />
+          <form class="newsletter_form">
+            <input type="text" placeholder="Enter your name" />
+            <input type="email" placeholder="Enter your email" />
+            <button class="button--primary">Subscribe</button>
+          </form>
+        </div>
+        <div class="newsletter_img">
+          <img src="./Images/Rectangle 18.png" alt="" />
+          <div class="offer_price">
+            <p>Travel.com</p>
+            <h3>Save up to 70%</h3>
           </div>
         </div>
-        <div class="bottom-box">
-          <div class="img-bottom">
-            <img src="./assets/Group 75.png" alt="" class="sup-box">
-            <img src="./assets/Rectangle 2.png" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="portfolio">
-        <div class="portfolio__textblock">
-          <h3 class="portfolio__subtitle">THE BEST GIFTS</h3>
-          <h1 class="portfolio__heading">Our Awesome Portfolio</h1>
-          <p class="portfolio__description">
-            Dolor sit amet consectetur. Consequat eget consectetur maecenas sed molestie malesuada. <br> Ipsum sed sodales risus ut pellentesque vel euismod. 
-        </p>
-      </div>
-      <div class="portfolio__showcase">
-        <figure class="portfolio__showcase__thumb">
-          <img src="assets/Rectangle 3.png" alt="" />
-        </figure>
-        <figure class="portfolio__showcase__thumb">
-          <img src="assets/Rectangle 4.png" alt="" />
-        </figure>
-        <figure class="portfolio__showcase__thumb">
-          <img src="assets/Rectangle 5.png" alt="" />
-        </figure>
-        <figure class="portfolio__showcase__thumb">
-          <img src="assets/Rectangle 6.png" alt="" />
-        </figure>
-        <figure class="portfolio__showcase__thumb">
-          <img src="assets/Rectangle 7.png" alt="" />
-        </figure>
-        <figure class="portfolio__showcase__thumb">
-          <img src="assets/Rectangle 8.png" alt="" />
-        </figure>
-      </div>
-      <div class="newsletter">
-        <figure class="newsletter__icon">
-          <img src="assets/Group 61.png" alt="newsletter icon">
-        </figure>
-        <h1 class="newsletter__heading">Subscribe Newsletter</h1>
-        <p class="newsletter__description">Dolor sit amet consectetur. Consequat eget consectetur maecenas sed molestie malesuada. <br>Ipsum sed sodales risus ut pellentesque vel euismod. </p>
-        <div class="newsletter__form">
-          <input type="text" placeholder="user@gmail.com" />
-          <button>Subscribe</button>
-      </div>
+      </section>
     </main>
-    <footer class="container">
-      <div class="row-top">
-        <div class="row-top__left">
-          <p>44, Big Building Roosevelt Street <br>
-            Beach Gardens Florida 33410</p>
+
+    <!-- footer section -->
+    <footer class="pt-50">
+      <div class="footer_content">
+        <div class="footer__logo">
+          <img src="./Images/icon.png" alt="nav icon" />
+          <h5>Edge <span>Tour</span></h5>
         </div>
-        <div class="row-top__right">
-          <div class="phone"><img src="assets/phone.svg" alt="phone"><span>+00 123 584 124</span></div>
-          <div class="website">
-            <img src="assets/web.svg" alt="web"><span>www.website.com</span>
-          </div>
-        </div>
-      </div>
-      <hr class="divider">
-      <div class="row-middle">
-          <div class="social-links">
-            <img src="assets/Facebook.png" alt="Facebook" />
-            <img src="assets//Instagram.png" alt="Instagram" />
-            <img src="assets//Twitter.png" alt="twitter" />
-            <img src="assets//Linkedin.png" alt="Linkedin" />
+        <p class="footer_content__text">
+          Your gateway to extraordinary journeys. Explore, discover, and make memories with our curated experiences. Your dream adventure awaits. Start your journey today!
+        </p>
+        <div class="logo__box">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-github"></i>
         </div>
       </div>
-      <hr class="divider">
-      <div class="row-bottom">
-        <p class="footer-text">2017, All Rights Reserved.</p>
-          <a href="#">Unsubscribe</a>
-      </div>
+      <hr />
+      <p class="copyright">2017, All Rights Reserved.</p>
     </footer>
   </body>
 </html>
