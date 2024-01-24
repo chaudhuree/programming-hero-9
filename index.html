@@ -3,1358 +3,398 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hockey</title>
-    <!-- daisy ui and tailwind css cdn-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- manrope font -->
+    <title>Document</title>
+    <!-- front -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <!-- font awesome  -->
-
-    <script defer src="all.js"></script>
-    <!-- tailwind config -->
-    <script>
-      tailwind.config = {
-        theme: {
-          container: {
-            center: true,
-          },
-          extend: {
-            colors: {
-              basecolor: "#FF4240",
-              basetext: "#424247",
-            },
-            lineHeight: {
-              baselead: "26px",
-            },
-          },
-        },
-      };
-    </script>
-
-    <!-- custom css -->
-    <style>
-      @tailwind base;
-      @tailwind components;
-      @tailwind utilities;
-      .font-manrope {
-        font-family: "Manrope", sans-serif;
-      }
-      .gallery_first_img {
-        background: linear-gradient(
-            180deg,
-            rgba(19, 19, 24, 0.5) 0%,
-            rgba(19, 19, 24, 0.5) 100%
-          ),
-          url("./Images/2.png");
-      }
-      .gallery_second_img {
-        background: linear-gradient(
-            180deg,
-            rgba(19, 19, 24, 0.5) 0%,
-            rgba(19, 19, 24, 0.5) 100%
-          ),
-          url("./Images/3.png");
-      }
-      .gallery_third_img {
-        background: linear-gradient(
-            180deg,
-            rgba(19, 19, 24, 0.5) 0%,
-            rgba(19, 19, 24, 0.5) 100%
-          ),
-          url("./Images/4.png");
-      }
-    </style>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- header section -->
-    <header class="container font-manrope mb-16 lg:mb-24 px-5">
-      <!-- navbar section -->
-      <div class="navbar bg-base-100 py-7 lg:py-[50px] px-0">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div
-              tabindex="0"
-              role="button"
-              class="btn btn-ghost lg:hidden pl-0 text-2xl"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <li
-                class="text-basetext hover:text-basecolor transition-all duration-300"
-              >
-                <a href="#">Home</a>
-              </li>
-              <li
-                class="text-basetext hover:text-basecolor transition-all duration-300"
-              >
-                <a href="#">About</a>
-              </li>
-              <li
-                class="text-basetext hover:text-basecolor transition-all duration-300"
-              >
-                <a href="#">Pages</a>
-              </li>
-              <li
-                class="text-basetext hover:text-basecolor transition-all duration-300"
-              >
-                <a href="#">Blog</a>
-              </li>
-              <li
-                class="text-basetext hover:text-basecolor transition-all duration-300"
-              >
-                <a href="#">Contact</a>
-              </li>
-            </ul>
+    <header>
+      <div class="container pb-50">
+        <nav>
+          <div class="icon">
+            <img src="./Images/icon.png" alt="nav icon" />
+            <p>Edge <span>Tour</span></p>
           </div>
-          <a
-            class="text-gray-900 font-manrope text-2xl lg:text-4xl font-extrabold leading-normal"
-            >Hockey<span class="text-basecolor">’</span>s</a
-          >
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="flex gap-11 menu-horizontal px-1">
-            <li
-              class="text-basetext hover:text-basecolor transition-all duration-300"
-            >
-              <a href="#">Home</a>
-            </li>
-            <li
-              class="text-basetext hover:text-basecolor transition-all duration-300"
-            >
-              <a href="#">About</a>
-            </li>
-            <li
-              class="text-basetext hover:text-basecolor transition-all duration-300"
-            >
-              <a href="#">Pages</a>
-            </li>
-            <li
-              class="text-basetext hover:text-basecolor transition-all duration-300"
-            >
-              <a href="#">Blog</a>
-            </li>
-            <li
-              class="text-basetext hover:text-basecolor transition-all duration-300"
-            >
-              <a href="#">Contact</a>
-            </li>
+          <ul class="full__nav">
+            <li class="icon__link"><a href="#">Home</a></li>
+            <li class="icon__link"><a href="#">Packages</a></li>
+            <li class="icon__link"><a href="#">Testimonial</a></li>
+            <li class="icon__link"><a href="#">Blog</a></li>
+            <li class="icon__link"><a href="#">Contact</a></li>
           </ul>
-        </div>
-        <div class="navbar-end gap-6">
-          <i class="fa-thin fa-magnifying-glass text-2xl hidden lg:block"></i>
-          <a class="btn bg-basecolor hover:bg-[#ff6866] text-white font-bold text-lg lg:text-2xl"
-            >Get Ticket</a
-          >
-        </div>
-      </div>
-      <!-- banner section -->
-      <div class="carousel w-full">
-        <!-- slide 1 -->
-        <div
-          id="slide1"
-          class="carousel-item w-full max-md:flex-col max-md:gap-4"
-        >
-          <div class="relative w-full max-md:h-[200px] lg:h-[550px]">
-            <img
-              src="./Images/1.png"
-              class="w-full rounded-2xl object-cover h-full"
-            />
-            <!-- for the gradient or opacity -->
-            <div class="absolute inset-0 bg-black opacity-50 rounded-2xl"></div>
-            <div
-              class="absolute flex gap-4 md:left-8 md:bottom-8 max-md:transform max-md:top-[90%] max-md:left-[50%] max-md:-translate-x-1/2 max-md:-translate-y-[90%]"
-            >
-              <a href="#slide4" class="btn btn-neutral btn-circle">❮</a>
-              <a href="#slide2" class="btn btn-neutral btn-circle">❯</a>
-            </div>
-            <!--absolute text box -->
-            <div
-              class="bg-black text-white absolute p-4 lg:p-8 rounded-2xl lg:right-8 lg:bottom-8 space-y-2 max-md:hidden"
-            >
-              <h3 class="font-extrabold text-lg lg:text-2xl">
-                Meet all the heroes from the field
-              </h3>
-              <p class="text-[#FFFFFF99] lg:text-base lg:leading-baselead">
-                Explore the World of Hockey with Passion and Precision. Our commitment to 
-                <br>
-                excellence is as unwavering as a perfectly executed play.
-              </p>
-            </div>
+          <div class="mobile__nav__icon">
+            <img src="Images/humburger.svg" alt="" />
           </div>
-
-          <!-- another textbox -->
-          <div
-            class="bg-black text-white p-4 rounded-2xl max-md:w-full space-y-2 md:hidden"
-          >
-            <h3 class="font-extrabold text-lg">
-              Meet all the heroes from the field
-            </h3>
-            <p class="text-[#FFFFFF99] max-md:text-sm max-md:leading-6">
-              Explore the World of Hockey with Passion and Precision. Our commitment to 
-              <br>
-              excellence is as unwavering as a perfectly executed play.
+        </nav>
+        <div class="header__banner">
+          <div class="banner__content">
+            <h1>Explore Your Travel</h1>
+            <p>
+              Discover Your World: Where Every Destination Tells a Tale, and
+              Each Adventure Echoes in Your Heart. Let Your Journeys Craft the
+              Chapters of Your Life.
             </p>
-          </div>
-        </div>
 
-        <!-- slide 2 -->
-        <div
-          id="slide2"
-          class="carousel-item w-full max-md:flex-col max-md:gap-4"
-        >
-          <div class="relative w-full max-md:h-[200px] lg:h-[550px]">
-            <img
-              src="./Images/2.jpg"
-              class="w-full rounded-2xl object-cover h-full"
-            />
-            <div class="absolute inset-0 bg-black opacity-50 rounded-2xl"></div>
-            <div
-              class="absolute flex gap-4 md:left-8 md:bottom-8 max-md:transform max-md:top-[90%] max-md:left-[50%] max-md:-translate-x-1/2 max-md:-translate-y-[90%]"
-            >
-              <a href="#slide1" class="btn btn-neutral btn-circle">❮</a>
-              <a href="#slide3" class="btn btn-neutral btn-circle">❯</a>
-            </div>
-            <!--absolute text box -->
-            <div
-              class="bg-black text-white absolute p-4 lg:p-8 rounded-2xl lg:right-8 lg:bottom-8 space-y-2 max-md:hidden"
-            >
-              <h3 class="font-extrabold text-lg lg:text-2xl">
-                Meet all the heroes from the field
-              </h3>
-              <p class="text-[#FFFFFF99] lg:text-base lg:leading-baselead">
-                Explore the World of Hockey with Passion and Precision. Our commitment to 
-                <br>
-                excellence is as unwavering as a perfectly executed play.
-              </p>
-            </div>
-          </div>
+            <div class="input__box">
+              <form class="input__box__form">
+                <input type="text" placeholder="Where go" />
 
-          <!-- another textbox -->
-          <div
-            class="bg-black text-white p-4 rounded-2xl max-md:w-full space-y-2 md:hidden"
-          >
-            <h3 class="font-extrabold text-lg">
-              Meet all the heroes from the field
-            </h3>
-            <p class="text-[#FFFFFF99] max-md:text-sm max-md:leading-6">
-              Explore the World of Hockey with Passion and Precision. Our commitment to 
-                <br>
-                excellence is as unwavering as a perfectly executed play.
-            </p>
-          </div>
-        </div>
+                <select type="text">
+                  <option disabled>When</option>
+                  <option value="1">This Week</option>
+                  <option value="2">This Month</option>
+                  <option value="3">Next Month</option>
+                  <option value="4">Next Year</option>
+                </select>
 
-        <!-- slide 3 -->
-        <div
-          id="slide3"
-          class="carousel-item w-full max-md:flex-col max-md:gap-4"
-        >
-          <div class="relative w-full max-md:h-[200px] lg:h-[550px]">
-            <img
-              src="./Images/3.jpg"
-              class="w-full rounded-2xl object-cover h-full"
-            />
-            <div class="absolute inset-0 bg-black opacity-50 rounded-2xl"></div>
-            <div
-              class="absolute flex gap-4 md:left-8 md:bottom-8 max-md:transform max-md:top-[90%] max-md:left-[50%] max-md:-translate-x-1/2 max-md:-translate-y-[90%]"
-            >
-              <a href="#slide2" class="btn btn-neutral btn-circle">❮</a>
-              <a href="#slide4" class="btn btn-neutral btn-circle">❯</a>
-            </div>
-            <!--absolute text box -->
-            <div
-              class="bg-black text-white absolute p-4 lg:p-8 rounded-2xl lg:right-8 lg:bottom-8 space-y-2 max-md:hidden"
-            >
-              <h3 class="font-extrabold text-lg lg:text-2xl">
-                Meet all the heroes from the field
-              </h3>
-              <p class="text-[#FFFFFF99] lg:text-base lg:leading-baselead">
-                Explore the World of Hockey with Passion and Precision. Our commitment to 
-                <br>
-                excellence is as unwavering as a perfectly executed play.
-              </p>
-            </div>
-          </div>
+                <select type="text">
+                  <option disabled>Select Type</option>
+                  <option value="1">Adventure</option>
+                  <option value="2">Family</option>
+                  <option value="3">Solo</option>
+                </select>
 
-          <!-- another textbox -->
-          <div
-            class="bg-black text-white p-4 rounded-2xl max-md:w-full space-y-2 md:hidden"
-          >
-            <h3 class="font-extrabold text-lg">
-              Meet all the heroes from the field
-            </h3>
-            <p class="text-[#FFFFFF99] max-md:text-sm max-md:leading-6">
-              Explore the World of Hockey with Passion and Precision. Our commitment to 
-                <br>
-                excellence is as unwavering as a perfectly executed play.
-            </p>
-          </div>
-        </div>
-
-        <!-- slide 4 -->
-        <div
-          id="slide4"
-          class="carousel-item w-full max-md:flex-col max-md:gap-4"
-        >
-          <div class="relative w-full max-md:h-[200px] lg:h-[550px]">
-            <img
-              src="./Images/4.jpg"
-              class="w-full rounded-2xl object-cover h-full"
-            />
-            <!-- for the gradient or opacity -->
-            <div class="absolute inset-0 bg-black opacity-50 rounded-2xl"></div>
-            <div
-              class="absolute flex gap-4 md:left-8 md:bottom-8 max-md:transform max-md:top-[90%] max-md:left-[50%] max-md:-translate-x-1/2 max-md:-translate-y-[90%]"
-            >
-              <a href="#slide3" class="btn btn-neutral btn-circle">❮</a>
-              <a href="#slide1" class="btn btn-neutral btn-circle">❯</a>
+                <button class="button--primary"><i class="fa-solid fa-magnifying-glass"></i> Find Now</button>
+              </form>
             </div>
-            <!--absolute text box -->
-            <div
-              class="bg-black text-white absolute p-4 lg:p-8 rounded-2xl lg:right-8 lg:bottom-8 space-y-2 max-md:hidden"
-            >
-              <h3 class="font-extrabold text-lg lg:text-2xl">
-                Meet all the heroes from the field
-              </h3>
-              <p class="text-[#FFFFFF99] lg:text-base lg:leading-baselead">
-                Explore the World of Hockey with Passion and Precision. Our commitment to 
-                <br>
-                excellence is as unwavering as a perfectly executed play.
-              </p>
-            </div>
-          </div>
-
-          <!-- another textbox -->
-          <div
-            class="bg-black text-white p-4 rounded-2xl max-md:w-full space-y-2 md:hidden"
-          >
-            <h3 class="font-extrabold text-lg">
-              Meet all the heroes from the field
-            </h3>
-            <p class="text-[#FFFFFF99] max-md:text-sm max-md:leading-6">
-              Explore the World of Hockey with Passion and Precision. Our commitment to 
-                <br>
-                excellence is as unwavering as a perfectly executed play.
-            </p>
           </div>
         </div>
       </div>
     </header>
+
     <!-- main section -->
-    <main class="container font-manrope px-5">
-      <!-- professiona states -->
-      <div class="professional__stats mb-16 lg:mb-24">
-        <div
-          class="heading-text text-center border border-y-2 border-x-0 border-dashed border-[#131318]/20 p-12 mt-8 mb-8"
-        >
-          <h2
-            class="text-2xl font-extrabold md:text-4xl md:font-extrabold text-black"
-          >
-            Professional Hockeys Club
-          </h2>
-          <p
-            class="w-72 md:w-2/3 mx-auto text-basetext text-center text-sm font-medium leading-6 md:text-base md:leading-baselead md:mt-6 mt-4 md:md-20 mb-6"
-          >
-          Dive into the realm of Professional Hockey's Club, where each moment is a testament to our dedication. Immerse yourself in the thrill of the game.
+    <main class="container">
+      <!-- atricle section -->
+      <article class="article__popular pb-50 pt-50">
+        <div class="article__popular__textbox">
+          <h3>Our Popular Tours</h3>
+          <p>
+            Embark on a journey with us and explore the wonders of our popular tour. Immerse yourself in breathtaking landscapes and indulge in rich cultural experiences. 
           </p>
-        </div>
-
-        <!-- progressbar -->
-        <div class="container grid grid-cols-1 lg:grid-cols-4 gap-y-6">
-          <!-- 87% -->
-          <div
-            class="flex flex-col gap-4 justify-center items-center text-center"
-          >
-            <div class="cusotm_progressbar pb-2">
-              <!-- Circular Progress -->
-              <div class="relative h-40 w-40">
-                <svg
-                  class="h-full w-full"
-                  width="36"
-                  height="36"
-                  viewBox="0 0 36 36"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <!-- Background Circle -->
-                  <circle
-                    cx="18"
-                    cy="18"
-                    r="16"
-                    fill="none"
-                    class="stroke-current text-gray-200 dark:text-gray-700"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                  ></circle>
-                  <!-- Progress Circle inside a group with rotation -->
-                  <g class="origin-center rotate-[60deg] transform">
-                    <!-- Adjust stroke-dasharray and stroke-dashoffset to fill 87% -->
-                    <circle
-                      cx="18"
-                      cy="18"
-                      r="16"
-                      fill="none"
-                      class="stroke-current text-[#FF4240] dark:text-[#FF4240]"
-                      stroke-width="3"
-                      stroke-dasharray="100"
-                      stroke-dashoffset="13"
-                      stroke-linecap="round"
-                    ></circle>
-                  </g>
-                </svg>
-                <!-- Percentage Text -->
-                <div
-                  class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2"
-                >
-                  <span
-                    class="text-center text-[28px] font-extrabold text-gray-800 dark:text-white"
-                    >87%</span
-                  >
-                </div>
-              </div>
-
-              <!-- End Circular Progress -->
-            </div>
-            <h3 class="text-xl font-semibold">Prayer Facility</h3>
-            <p class="leading-baselead text-[#13131899]">
-              A sacred space dedicated to serenity and spiritual reflection.
-            </p>
-          </div>
-          <!-- 95% -->
-          <div
-            class="flex flex-col gap-4 justify-center items-center text-center"
-          >
-            <div class="cusotm_progressbar pb-2">
-              <!-- Circular Progress -->
-              <div class="relative h-40 w-40">
-                <svg
-                  class="h-full w-full"
-                  width="36"
-                  height="36"
-                  viewBox="0 0 36 36"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <!-- Background Circle -->
-                  <circle
-                    cx="18"
-                    cy="18"
-                    r="16"
-                    fill="none"
-                    class="stroke-current text-gray-200 dark:text-gray-700"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                  ></circle>
-                  <!-- Progress Circle inside a group with rotation -->
-                  <g class="origin-center rotate-[30deg] transform">
-                    <!-- Adjust stroke-dasharray and stroke-dashoffset to fill 87% -->
-                    <circle
-                      cx="18"
-                      cy="18"
-                      r="16"
-                      fill="none"
-                      class="stroke-current text-[#49D293] dark:text-[#49D293]"
-                      stroke-width="3"
-                      stroke-dasharray="100"
-                      stroke-dashoffset="5"
-                      stroke-linecap="round"
-                    ></circle>
-                  </g>
-                </svg>
-                <!-- Percentage Text -->
-                <div
-                  class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2"
-                >
-                  <span
-                    class="text-center text-[28px] font-extrabold text-gray-800 dark:text-white"
-                    >95%</span
-                  >
-                </div>
-              </div>
-
-              <!-- End Circular Progress -->
-            </div>
-            <h3 class="text-xl font-semibold">Experienced Coach</h3>
-            <p class="leading-baselead text-[#13131899]">
-              Strategic vision guides coach in unlocking athletes' potential. 
-            </p>
-          </div>
-          <!-- 90% -->
-          <div
-            class="flex flex-col gap-4 justify-center items-center text-center"
-          >
-            <div class="cusotm_progressbar pb-2">
-              <!-- Circular Progress -->
-              <div class="relative h-40 w-40">
-                <svg
-                  class="h-full w-full"
-                  width="36"
-                  height="36"
-                  viewBox="0 0 36 36"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <!-- Background Circle -->
-                  <circle
-                    cx="18"
-                    cy="18"
-                    r="16"
-                    fill="none"
-                    class="stroke-current text-gray-200 dark:text-gray-700"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                  ></circle>
-                  <!-- Progress Circle inside a group with rotation -->
-                  <g class="origin-center rotate-[60deg] transform">
-                    <!-- Adjust stroke-dasharray and stroke-dashoffset to fill 87% -->
-                    <circle
-                      cx="18"
-                      cy="18"
-                      r="16"
-                      fill="none"
-                      class="stroke-current text-[#FFB546] dark:text-[#FFB546]"
-                      stroke-width="3"
-                      stroke-dasharray="100"
-                      stroke-dashoffset="10"
-                      stroke-linecap="round"
-                    ></circle>
-                  </g>
-                </svg>
-                <!-- Percentage Text -->
-                <div
-                  class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2"
-                >
-                  <span
-                    class="text-center text-[28px] font-extrabold text-gray-800 dark:text-white"
-                    >90%</span
-                  >
-                </div>
-              </div>
-
-              <!-- End Circular Progress -->
-            </div>
-            <h3 class="text-xl font-semibold">Senior Player</h3>
-            <p class="leading-baselead text-[#13131899]">
-              Experienced senior leads with skill in every game.
-            </p>
-          </div>
-          <!-- 80% -->
-          <div
-            class="flex flex-col gap-4 justify-center items-center text-center"
-          >
-            <div class="cusotm_progressbar pb-2">
-              <!-- Circular Progress -->
-              <div class="relative h-40 w-40">
-                <svg
-                  class="h-full w-full"
-                  width="36"
-                  height="36"
-                  viewBox="0 0 36 36"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <!-- Background Circle -->
-                  <circle
-                    cx="18"
-                    cy="18"
-                    r="16"
-                    fill="none"
-                    class="stroke-current text-gray-200 dark:text-gray-700"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                  ></circle>
-                  <!-- Progress Circle inside a group with rotation -->
-                  <g class="origin-center rotate-[60deg] transform">
-                    <!-- Adjust stroke-dasharray and stroke-dashoffset to fill 87% -->
-                    <circle
-                      cx="18"
-                      cy="18"
-                      r="16"
-                      fill="none"
-                      class="stroke-current text-[#4C8DF1] dark:text-[#4C8DF1]"
-                      stroke-width="3"
-                      stroke-dasharray="100"
-                      stroke-dashoffset="20"
-                      stroke-linecap="round"
-                    ></circle>
-                  </g>
-                </svg>
-                <!-- Percentage Text -->
-                <div
-                  class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2"
-                >
-                  <span
-                    class="text-center text-[28px] font-extrabold text-gray-800 dark:text-white"
-                    >80%</span
-                  >
-                </div>
-              </div>
-
-              <!-- End Circular Progress -->
-            </div>
-            <h3 class="text-xl font-semibold">Training Ground</h3>
-            <p class="leading-baselead text-[#13131899]">
-              Elite training hub: excellence, growth, champions crafted.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- program  section -->
-      <div class="program_sction mb-16 lg:mb-24">
-        <div
-          class="heading-text text-center border border-y-2 border-x-0 border-dashed border-[#131318]/20 p-12 mt-8 mb-8"
-        >
-          <h2
-            class="text-2xl font-extrabold md:text-4xl md:font-extrabold text-black"
-          >
-            Program Sections
-          </h2>
-          <p
-            class="w-72 md:w-2/3 mx-auto text-basetext text-center text-sm font-medium leading-6 md:text-base md:leading-baselead md:mt-6 mt-4 md:md-20 mb-6"
-          >
-          Explore specialized Program Sections, each crafting unique pathways for skill development, strategy, teamwork, and holistic growth.
+          <ul>
+            <li>
+              Uncover diverse landscapes and cultural gems on our popular tour.
+            </li>
+            <li>
+              Indulge in a tapestry of local flavors and traditions, as our expertly crafted itinerary takes you on a journey.
+            </li>
+            <li>
+              Join us on this odyssey, where each destination unfolds as a unique chapter, promising not just a vacation but an unforgettable experience.
+            </li>
+          </ul>
+          <p>
+            Embark on our captivating tour, an immersive journey through diverse landscapes and cultural wonders. Indulge in local flavors, creating vibrant memories in each destination, ensuring an unforgettable travel experience.
           </p>
+          <div><button class="button--primary">Read More</button></div>
         </div>
-        <!-- gallery part -->
-        <div class="gallery container">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
-            <!-- First Row -->
-            <div
-              class="col-span-1 bg-cover bg-center rounded-2xl gallery_first_img"
-            >
-              <div
-                class="content__box px-6 lg:px-10 pt-6 lg:pt-24 mb-6 lg:mb-12 z-20"
-              >
-                <h3 class="text-[28px] font-extrabold text-white">
-                  Goal Mastery
-                </h3>
-                <p
-                  class="text-base font-medium text-white leading-baselead pt-4 pb-6 max-w-lg"
-                >
-                Embark on a transformative journey within our Goal Mastery program, where the key to unlocking your true potential lies. Elevate not only your skills but also your mindset, propelling yourself
-                </p>
-                <button
-                  class="btn btn-accent bg-basecolor hover:bg-[#ff6866] py-[10px] px-6 outline-none border-0 text-white text-xl font-bold"
-                >
-                  Register Now
-                </button>
-              </div>
-            </div>
-            <div
-              class="col-span-1 rounded-2xl bg-cover bg-center gallery_second_img"
-            >
-              <div
-                class="content__box px-6 lg:px-10 pt-6 lg:pt-24 mb-6 lg:mb-12 z-20"
-              >
-                <h3 class="text-[28px] font-extrabold text-white">
-                  Team Dynamics
-                </h3>
-                <p
-                  class="text-base font-medium text-white leading-baselead pt-4 pb-6 max-w-lg"
-                >
-                Explore Team Dynamics for unparalleled collaboration. Forge strong connections and enhance performance through strategic teamwork and shared goals.
-                </p>
-                <button
-                  class="btn btn-accent bg-basecolor hover:bg-[#ff6866] py-[10px] px-6 outline-none border-0 text-white text-xl font-bold"
-                >
-                  Register Now
-                </button>
-              </div>
-            </div>
-
-            <!-- Second Row -->
-            <div
-              class="col-span-1 md:col-span-2 rounded-2xl bg-cover bg-center gallery_third_img"
-            >
-              <div class="content__box px-10 pt-6 lg:pt-52 mb-6 lg:mb-12 z-20">
-                <h3 class="text-[28px] font-extrabold text-white">
-                  Skill Precision
-                </h3>
-                <p
-                  class="text-base font-medium text-white leading-baselead pt-4 pb-6 max-w-lg"
-                >
-                Delve into Skill Precision, where every detail is crucial. Refine your abilities through precision training, ensuring excellence in every move. Hone your skills for success in every endeavor.
-                </p>
-                <button
-                  class="btn  bg-basecolor py-[10px] px-6 outline-none border-0 hover:bg-[#ff6866] text-white text-xl font-bold"
-                >
-                  Register Now
-                </button>
-              </div>
-            </div>
-          </div>
+        <div class="article__popular__imagebox">
+          <figure>
+            <img src="./Images/Rectangle 4.png" alt="popular" />
+          </figure>
         </div>
-      </div>
-      <!-- new product section -->
-      <div class="new_product mb-16 lg:mb-24">
-        <div
-          class="heading-text text-center border border-y-2 border-x-0 border-dashed border-[#131318]/20 p-12 mt-8 mb-8"
-        >
-          <h2
-            class="text-2xl font-extrabold md:text-4xl md:font-extrabold text-black"
-          >
-            Our New Products
-          </h2>
-          <p
-            class="w-72 md:w-2/3 mx-auto text-basetext text-center text-sm font-medium leading-6 md:text-base md:leading-baselead md:mt-6 mt-4 md:md-20 mb-6"
-          >
-          Discover excellence in Our New Products, featuring cutting-edge designs and advanced features, crafted to elevate and meet evolving needs.
-          </p>
-        </div>
-        <!-- card container -->
-        <div
-          class="cards container grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12"
-        >
-          <!-- card one -->
-          <div
-            class="card lg:card-side bg-base-100 shadow-sm border border-1 p-6"
-          >
-            <figure>
-              <img
-                class="max-sm:w-full"
-                src="./Images/5.png"
-                alt="red jacket"
-              />
-            </figure>
-            <div class="card-body">
-              <!-- icons with value -->
-              <div class="flex gap-4 items-center">
-                <div class="star space-x-2">
-                  <i class="fa-solid fa-star text-[#F99808]"></i>
-                  <span class="font-medium text-gray-600">5.0</span>
-                </div>
-                <div class="watched space-x-2">
-                  <i class="fa-thin fa-eye text-gray-600"></i>
-                  <span class="font-medium text-gray-600">20</span>
-                </div>
-                <div class="heart space-x-2">
-                  <i class="fa-light fa-heart text-gray-600"></i>
-                  <span class="font-medium text-gray-600">200</span>
-                </div>
-              </div>
-              <h2 class="card-title text-xl font-extrabold">
-                World Cup Jacket
-              </h2>
-              <p class="text-base font-medium leading-baselead">
-                Blending comfort and fashion to celebrate the spirit of the game.
-              </p>
-              <div class="card-action flex gap-5 items-center">
-                <span
-                  class="text-basecolor text-lg font-extrabold leading-baselead"
-                  >Price - $22.00</span
-                >
-                <p class="flex gap-2">
-                  <img src="./Images/cart.svg" alt="" /><span
-                    class="font-medium text-basetext"
-                    >Delivery Fee : Free</span
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- card two -->
-          <div
-            class="card lg:card-side bg-base-100 shadow-sm border border-1 p-6"
-          >
-            <figure>
-              <img
-                class="max-sm:w-full"
-                src="./Images/6.png"
-                alt="red jacket"
-              />
-            </figure>
-            <div class="card-body">
-              <!-- icons with value -->
-              <div class="flex gap-4 items-center">
-                <div class="star space-x-2">
-                  <i class="fa-solid fa-star text-[#F99808]"></i>
-                  <span class="font-medium text-gray-600">5.0</span>
-                </div>
-                <div class="watched space-x-2">
-                  <i class="fa-thin fa-eye text-gray-600"></i>
-                  <span class="font-medium text-gray-600">20</span>
-                </div>
-                <div class="heart space-x-2">
-                  <i class="fa-light fa-heart text-gray-600"></i>
-                  <span class="font-medium text-gray-600">200</span>
-                </div>
-              </div>
-              <h2 class="card-title text-xl font-extrabold">
-                World Cup Flags Football
-              </h2>
-              <p class="text-base font-medium leading-baselead">
-                With our vibrant collection celebrating international teams and their unique flags.
-              </p>
-              <div class="card-action flex gap-5 items-center">
-                <span
-                  class="text-basecolor text-lg font-extrabold leading-baselead"
-                  >Price - $22.00</span
-                >
-                <p class="flex gap-2">
-                  <img src="./Images/cart.svg" alt="" /><span
-                    class="font-medium text-basetext"
-                    >Delivery Fee : Free</span
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- card three -->
-          <div
-            class="card lg:card-side bg-base-100 shadow-sm border border-1 p-6"
-          >
-            <figure>
-              <img
-                class="max-sm:w-full"
-                src="./Images/7.png"
-                alt="red jacket"
-              />
-            </figure>
-            <div class="card-body">
-              <!-- icons with value -->
-              <div class="flex gap-4 items-center">
-                <div class="star space-x-2">
-                  <i class="fa-solid fa-star text-[#F99808]"></i>
-                  <span class="font-medium text-gray-600">5.0</span>
-                </div>
-                <div class="watched space-x-2">
-                  <i class="fa-thin fa-eye text-gray-600"></i>
-                  <span class="font-medium text-gray-600">20</span>
-                </div>
-                <div class="heart space-x-2">
-                  <i class="fa-light fa-heart text-gray-600"></i>
-                  <span class="font-medium text-gray-600">200</span>
-                </div>
-              </div>
-              <h2 class="card-title text-xl font-extrabold">
-                World Cup Cap
-              </h2>
-              <p class="text-base font-medium leading-baselead">
-                Showcasing style and team spirit for a true World Cup experience.
-              </p>
-              <div class="card-action flex gap-5 items-center">
-                <span
-                  class="text-basecolor text-lg font-extrabold leading-baselead"
-                  >Price - $22.00</span
-                >
-                <p class="flex gap-2">
-                  <img src="./Images/cart.svg" alt="" /><span
-                    class="font-medium text-basetext"
-                    >Delivery Fee : Free</span
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- card four -->
-          <div
-            class="card lg:card-side bg-base-100 shadow-sm border border-1 p-6"
-          >
-            <figure>
-              <img
-                class="max-sm:w-full"
-                src="./Images/8.png"
-                alt="red jacket"
-              />
-            </figure>
-            <div class="card-body">
-              <!-- icons with value -->
-              <div class="flex gap-4 items-center">
-                <div class="star space-x-2">
-                  <i class="fa-solid fa-star text-[#F99808]"></i>
-                  <span class="font-medium text-gray-600">5.0</span>
-                </div>
-                <div class="watched space-x-2">
-                  <i class="fa-thin fa-eye text-gray-600"></i>
-                  <span class="font-medium text-gray-600">20</span>
-                </div>
-                <div class="heart space-x-2">
-                  <i class="fa-light fa-heart text-gray-600"></i>
-                  <span class="font-medium text-gray-600">200</span>
-                </div>
-              </div>
-              <h2 class="card-title text-xl font-extrabold">
-                World Cup Jersey
-              </h2>
-              <p class="text-base font-medium leading-baselead">
-                Eaturing high-quality jerseys that embody the passion and glory of the World Cup.
-              </p>
-              <div class="card-action flex gap-5 items-center">
-                <span
-                  class="text-basecolor text-lg font-extrabold leading-baselead"
-                  >Price - $22.00</span
-                >
-                <p class="flex gap-2">
-                  <img src="./Images/cart.svg" alt="" /><span
-                    class="font-medium text-basetext"
-                    >Delivery Fee : Free</span
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- card five -->
-          <div
-            class="card lg:card-side bg-base-100 shadow-sm border border-1 p-6"
-          >
-            <figure>
-              <img
-                class="max-sm:w-full"
-                src="./Images/9.png"
-                alt="red jacket"
-              />
-            </figure>
-            <div class="card-body">
-              <!-- icons with value -->
-              <div class="flex gap-4 items-center">
-                <div class="star space-x-2">
-                  <i class="fa-solid fa-star text-[#F99808]"></i>
-                  <span class="font-medium text-gray-600">5.0</span>
-                </div>
-                <div class="watched space-x-2">
-                  <i class="fa-thin fa-eye text-gray-600"></i>
-                  <span class="font-medium text-gray-600">20</span>
-                </div>
-                <div class="heart space-x-2">
-                  <i class="fa-light fa-heart text-gray-600"></i>
-                  <span class="font-medium text-gray-600">200</span>
-                </div>
-              </div>
-              <h2 class="card-title text-xl font-extrabold">
-                World Cup Helmet
-              </h2>
-              <p class="text-base font-medium leading-baselead">
-                Offering both style and protection for an unparalleled World Cup experience.
-              </p>
-              <div class="card-action flex gap-5 items-center">
-                <span
-                  class="text-basecolor text-lg font-extrabold leading-baselead"
-                  >Price - $22.00</span
-                >
-                <p class="flex gap-2">
-                  <img src="./Images/cart.svg" alt="" /><span
-                    class="font-medium text-basetext"
-                    >Delivery Fee : Free</span
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- card six -->
-          <div
-            class="card lg:card-side bg-base-100 shadow-sm border border-1 p-6"
-          >
-            <figure>
-              <img
-                class="max-sm:w-full"
-                src="./Images/10.png"
-                alt="red jacket"
-              />
-            </figure>
-            <div class="card-body">
-              <!-- icons with value -->
-              <div class="flex gap-4 items-center">
-                <div class="star space-x-2">
-                  <i class="fa-solid fa-star text-[#F99808]"></i>
-                  <span class="font-medium text-gray-600">5.0</span>
-                </div>
-                <div class="watched space-x-2">
-                  <i class="fa-thin fa-eye text-gray-600"></i>
-                  <span class="font-medium text-gray-600">20</span>
-                </div>
-                <div class="heart space-x-2">
-                  <i class="fa-light fa-heart text-gray-600"></i>
-                  <span class="font-medium text-gray-600">200</span>
-                </div>
-              </div>
-              <h2 class="card-title text-xl font-extrabold">
-                World Cup Flags Football
-              </h2>
-              <p class="text-base font-medium leading-baselead">
-                With our vibrant collection celebrating international teams and their unique flags.
-              </p>
-              <div class="card-action flex gap-5 items-center">
-                <span
-                  class="text-basecolor text-lg font-extrabold leading-baselead"
-                  >Price - $22.00</span
-                >
-                <p class="flex gap-2">
-                  <img src="./Images/cart.svg" alt="" /><span
-                    class="font-medium text-basetext"
-                    >Delivery Fee : Free</span
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- client query section -->
-      <div class="new_product mb-16 lg:mb-24">
-        <div
-          class="heading-text text-center border border-y-2 border-x-0 border-dashed border-[#131318]/20 p-12 mt-8 mb-8"
-        >
-          <h2
-            class="text-2xl font-extrabold md:text-4xl md:font-extrabold text-black"
-          >
-            Clients Question
-          </h2>
-          <p
-            class="w-72 md:w-2/3 mx-auto text-basetext text-center text-sm font-medium leading-6 md:text-base md:leading-baselead md:mt-6 mt-4 md:md-20 mb-6"
-          >
-          Elevating Experiences, Building Relationships. Our commitment goes beyond service – it's about creating meaningful connections and exceeding expectations at every interaction.
-          </p>
-        </div>
-        <!-- accordian container -->
-        <div class="border border-1 p-4 rounded-2xl">
-          <div class="hero-content flex-col lg:flex-row">
-            <img
-              src="./Images/11.png"
-              class="lg:w-[471px] lg:h-[430px] max-sm:w-full rounded-lg shadow-2xl"
-            />
-            <div class="flex-1">
-              <div class="join join-vertical w-full">
-                <!-- one -->
-                <div
-                  class="collapse collapse-plus join-item border border-base-300 border-l-0 border-t-0 border-r-0"
-                >
-                  <input type="radio" name="my-accordion-4" checked="checked" />
-                  <div class="collapse-title text-xl font-bold">
-                    Our Equipment
-                  </div>
-                  <div class="collapse-content">
-                    <p class="leading-baselead pr-32">
-                      Explore our comprehensive range of cutting-edge equipment, meticulously designed to meet the diverse needs of our users.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- two -->
-                <div
-                  class="collapse collapse-plus join-item border border-base-300 border-l-0 border-t-0 border-r-0"
-                >
-                  <input type="radio" name="my-accordion-4" />
-                  <div class="collapse-title text-xl font-bold">
-                    Hockey Training
-                  </div>
-                  <div class="collapse-content">
-                    <p class="leading-baselead pr-32">
-                      Discover a variety of specialized training programs tailored for players of all levels. From skill development to strategic gameplay
-                    </p>
-                  </div>
-                </div>
-
-                <!-- three -->
-                <div
-                  class="collapse collapse-plus join-item border border-base-300 border-l-0 border-t-0 border-r-0"
-                >
-                  <input type="radio" name="my-accordion-4" />
-                  <div class="collapse-title text-xl font-bold">
-                    Private Lessons
-                  </div>
-                  <div class="collapse-content">
-                    <p class="leading-baselead pr-32">
-                      Booking a private lesson is easy! Explore our scheduling options and secure your one-on-one session with our expert coaches for personalized guidance and accelerated skill development.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- four -->
-                <div
-                  class="collapse collapse-plus join-item border border-base-300 border-l-0 border-t-0 border-r-0"
-                >
-                  <input type="radio" name="my-accordion-4" />
-                  <div class="collapse-title text-xl font-bold">
-                    Ski Touring
-                  </div>
-                  <div class="collapse-content">
-                    <p class="leading-baselead pr-32">
-                      Explore the world of ski touring, a dynamic and adventurous activity. Discover how this form of skiing is suitable for both beginners and seasoned enthusiasts seeking an immersive backcountry experience.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- five -->
-                <div
-                  class="collapse collapse-plus join-item border border-base-300 border-l-0 border-t-0 border-r-0"
-                >
-                  <input type="radio" name="my-accordion-4" />
-                  <div class="collapse-title text-xl font-bold">Booking</div>
-                  <div class="collapse-content">
-                    <p class="leading-baselead pr-32">
-                      Booking with us is simple and efficient. Explore our user-friendly platform to secure your reservation and embark on a seamless and enjoyable experience.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- six -->
-                <div class="collapse collapse-plus join-item border-0">
-                  <input type="radio" name="my-accordion-4" />
-                  <div class="collapse-title text-xl font-bold">Pricings</div>
-                  <div class="collapse-content">
-                    <p class="leading-baselead pr-32">
-                      Understand our transparent pricing model, crafted to provide value for every customer. Learn about the factors influencing pricing and the commitment to fairness and quality.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- contact section -->
-      <article class="new_product mb-16 lg:mb-24">
-        <!-- heading -->
-        <header
-          class="heading-text text-center border border-y-2 border-x-0 border-dashed border-[#131318]/20 p-12 mt-8 mb-8"
-        >
-          <h2
-            class="text-2xl font-extrabold md:text-4xl md:font-extrabold text-black"
-          >
-            Get In Touch
-          </h2>
-          <p
-            class="w-72 md:w-2/3 mx-auto text-basetext text-center text-sm font-medium leading-6 md:text-base md:leading-baselead md:mt-6 mt-4 md:md-20 mb-6"
-          >
-          Explore the various ways to get in touch, share your inquiries, and experience exceptional customer service.
-          </p>
-        </header>
-        <!-- contact form container -->
-        <main
-          class="container grid sm:grid-cols-6 lg:grid-cols-12 gap-4 w-full lg:mt-4"
-        >
-          <!-- First Div (Takes 5 columns on large screens, full width on small screens) -->
-          <div
-            class="lg:col-span-5 sm:col-span-6 max-sm:p-6 lg:p-12 border border-1 rounded-2xl grid grid-cols-1 gap-6 sm:gap-4"
-          >
-            <!-- Content for the first div -->
-            <!-- card 1 -->
-            <div class="card bg-[#BCED6D1A]">
-              <div class="card-body space-y-6">
-                <img class="w-12" src="./Images/phone.svg" alt="" />
-                <p class="leading-8 text-gray-500">
-                  Phone Number :
-                  <br />
-                  <span class="text-lg leading-8 font-extrabold text-[#131318]"
-                    >(+62) 123-321-543</span
-                  >
-                </p>
-              </div>
-            </div>
-            <!-- card 2 -->
-            <div class="card bg-[#FDDD5F1A]">
-              <div class="card-body space-y-6">
-                <img class="w-12" src="./Images/envelop.svg" alt="" />
-                <p class="leading-8 text-gray-500">
-                  Email :
-                  <br />
-                  <span class="text-lg leading-8 font-extrabold text-[#131318]"
-                    >hockeys@support.com</span
-                  >
-                </p>
-              </div>
-            </div>
-            <!-- card 3 -->
-            <div class="card bg-[#629CF31A]">
-              <div class="card-body space-y-6">
-                <img class="w-12" src="./Images/locationpin.svg" alt="" />
-                <p class="leading-8 text-gray-500">
-                  Location :
-                  <br />
-                  <span class="text-lg leading-8 font-extrabold text-[#131318]"
-                    >152/1 Mohakhali Wireless Gate</span
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Second Div (Takes 7 columns on large screens, full width on small screens) -->
-          <div class="lg:col-span-7 sm:col-span-6">
-            <!-- Content for the second div -->
-            <form>
-              <div class="container grid grid-cols-2 gap-6">
-                <!-- firse row -->
-                <!-- name field -->
-                <label class="form-control w-full space-y-4 max-sm:col-span-2">
-                  <div class="label p-0">
-                    <span class="label-text text-[#131318] text-xl font-bold"
-                      >Your Name :</span
-                    >
-                  </div>
-                  <input
-                    type="text"
-                    placeholder="Enter your full name"
-                    class="input input-bordered bg-[#f8f8f8]"
-                  />
-                </label>
-                <!-- email field -->
-                <label class="form-control w-full space-y-4 max-sm:col-span-2">
-                  <div class="label p-0">
-                    <span class="label-text text-[#131318] text-xl font-bold"
-                      >Your Email :</span
-                    >
-                  </div>
-                  <input
-                    type="text"
-                    placeholder="Enter your email"
-                    class="input input-bordered bg-[#f8f8f8]"
-                  />
-                </label>
-
-                <!-- second row -->
-                <!-- subject field -->
-                <label class="form-control w-full space-y-4 max-sm:col-span-2">
-                  <div class="label p-0">
-                    <span class="label-text text-[#131318] text-xl font-bold"
-                      >Subject :</span
-                    >
-                  </div>
-                  <input
-                    type="text"
-                    placeholder="Enter your subject"
-                    class="input input-bordered bg-[#f8f8f8]"
-                  />
-                </label>
-                <!-- phone number field -->
-                <label class="form-control w-full space-y-4 max-sm:col-span-2">
-                  <div class="label p-0">
-                    <span class="label-text text-[#131318] text-xl font-bold"
-                      >Phone Number :</span
-                    >
-                  </div>
-                  <input
-                    type="text"
-                    placeholder="Enter your phone number"
-                    class="input input-bordered bg-[#f8f8f8]"
-                  />
-                </label>
-
-                <!-- third row -->
-                <!-- message field -->
-                <label class="form-control col-span-2 w-full space-y-4">
-                  <div class="label p-0">
-                    <span class="label-text text-[#131318] text-xl font-bold"
-                      >Message :</span
-                    >
-                  </div>
-                  <textarea
-                    type="text"
-                    placeholder="Write your message"
-                    class="textarea textarea-bordered bg-[#f8f8f8] p-5 h-[400px] max-sm:h-[200px]"
-                  ></textarea>
-                </label>
-                <div class="col-span-2">
-                  <button
-                    class="btn bg-basecolor btn-block text-xl font-bold lg:mt-6 lg:col-span-2 text-white  hover:bg-[#ff5553]"
-                  >
-                    Send Message
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </main>
-        <!-- footer -->
-        <footer
-          class="mt-12 bg-[#13131808] rounded-xl p-9 flex flex-col gap-6 justify-center items-center"
-        >
-          <h3 class="font-extrabold text-2xl text-black">Social Media</h3>
-          <div class="space-x-6">
-            <i class="fa-brands fa-twitter w-6"></i>
-            <i class="fa-brands fa-facebook-f w-6"></i>
-            <i class="fa-brands fa-instagram w-6"></i>
-            <i class="fa-brands fa-github w-6"></i>
-          </div>
-        </footer>
       </article>
-    </main>
-    <!-- footer -->
-    <footer
-      class="container footer bg-[#131318] text-base-content pt-24 pb-32 px-32 gap-16 font-manrope text-[#FFFFFF99]"
-    >
-      <nav class="max-sm:place-items-center">
-        <header class="text-[28px] text-[#FFF] font-extrabold">
-          Get In Touch
-        </header>
-        <p class="mt-4 mb-6 lg:w-80 max-sm:mx-auto max-sm:text-center">
-          Hockey Enthusiasts Unite: Step into the world of passion and precision. From gear to goals, we celebrate the spirit of hockey with every stride and shot.
+      <!-- portfolio section -->
+      <section class="portfolio">
+        <div class="portfolio__textbox">
+          <h3>Choose Your Destination</h3>
+          <p>
+            Select your dream destination and embark on a captivating journey, exploring diverse landscapes and creating lasting memories along the way.
+          </p>
+        </div>
+        <div class="portfolio__gallery">
+          <div class="a">
+            <img
+              class="portfolio__img"
+              src="./Images/Rectangle 5.png"
+              alt="Maldives"
+            />
+            <p>Maldives</p>
+          </div>
+          <div class="b">
+            <img
+              class="portfolio__img"
+              src="./Images/Rectangle 8.png"
+              alt="Indonesia"
+            />
+            <p>Indonesia</p>
+          </div>
+          <div class="c">
+            <img
+              class="portfolio__img"
+              src="./Images/Rectangle 6.png"
+              alt="Srilanka"
+            />
+            <p>Srilanka</p>
+          </div>
+          <div class="d">
+            <img
+              class="portfolio__img"
+              src="./Images/Rectangle 7.png"
+              alt="North America"
+            />
+            <p>North America</p>
+          </div>
+          <div class="e">
+            <img
+              class="portfolio__img"
+              src="./Images/Rectangle 9.png"
+              alt="Kasmir"
+            />
+            <p>Kasmir</p>
+          </div>
+          <div class="f">
+            <img
+              class="portfolio__img"
+              src="./Images/Rectangle 11.png"
+              alt="Bangladesh"
+            />
+            <p>Bangladesh</p>
+          </div>
+          <div class="g">
+            <img
+              class="portfolio__img"
+              src="./Images/Group 40089.png"
+              alt="Bandarban"
+            />
+            <p>Bandarban</p>
+          </div>
+        </div>
+      </section>
+      <!-- why us -->
+      <section class="why__us pt-50 pb-50">
+        <div class="why__us__textbox">
+          <h3>Why Choose Us</h3>
+          <p>
+            Choose us for a seamless blend of expertly curated experiences, personalized service, and unforgettable moments that redefine your travels.
+          </p>
+        </div>
+        <div class="our__service">
+          <div class="service__box">
+            <img src="./Images/hotel.svg" alt="" />
+            <h3>Handpicked Hotels</h3>
+            <p>
+              Discover comfort and luxury at our hotel, offering stylish accommodations, modern amenities, exceptional service, and a central location for an unforgettable stay.
+            </p>
+          </div>
+          <div class="service__box">
+            <img src="./Images/map.svg" alt="" />
+            <h3>Handpicked Hotels</h3>
+            <p>
+              Discover comfort and luxury at our hotel, offering stylish accommodations, modern amenities, exceptional service, and a central location for an unforgettable stay.
+            </p>
+          </div>
+          <div class="service__box">
+            <img src="./Images/price.svg" alt="" />
+            <h3>Handpicked Hotels</h3>
+            <p>
+              Discover comfort and luxury at our hotel, offering stylish accommodations, modern amenities, exceptional service, and a central location for an unforgettable stay.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- deals and discount section -->
+      <section class="discount pt-50 pb-50">
+        <div class="discount__textbox">
+          <h3>Deals & Discounts</h3>
+          <p>
+            Unlock exclusive deals and discounts, ensuring affordability without compromising on quality, making your travel experience both enjoyable and budget-friendly.
+          </p>
+        </div>
+        <div class="discount__gallery">
+          <div class="deals__basic">
+            <div class="deals__box">
+              <div class="pack__details">
+                <div class="time_table">
+                  <i class="fa-regular fa-clock"></i
+                  ><span>7 Day / 6 Night</span>
+                </div>
+                <div class="max">
+                  <i class="fa-solid fa-users"></i><span>Max : 10</span>
+                </div>
+                <div class="location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Malaysia</span>
+                </div>
+              </div>
+              <div class="details__text">
+                <h3>Tour To Satorini</h3>
+                <p>
+                  Discover a picturesque haven, where serenity meets beauty, creating a perfect escape to unwind and create lasting memories.
+                </p>
+                <h4>Price: $1300-$1500</h4>
+              </div>
+              <div>
+                <button class="button--primary">Book Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="deals__basic premium">
+            <div class="deals__box">
+              <div class="pack__details">
+                <div class="time_table">
+                  <i class="fa-regular fa-clock"></i
+                  ><span>7 Day / 6 Night</span>
+                </div>
+                <div class="max">
+                  <i class="fa-solid fa-users"></i><span>Max : 10</span>
+                </div>
+                <div class="location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Malaysia</span>
+                </div>
+              </div>
+              <div class="details__text">
+                <h3>Tour To Satorini</h3>
+                <p>
+                  Experience enchantment in a scenic paradise. A nice place where nature's beauty intertwines with tranquility, offering an idyllic retreat.
+                </p>
+                <h4>Price: $1300-$1500</h4>
+              </div>
+              <div>
+                <button class="button--primary">Book Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="deals__basic">
+            <div class="deals__box">
+              <div class="pack__details">
+                <div class="time_table">
+                  <i class="fa-regular fa-clock"></i
+                  ><span>7 Day / 6 Night</span>
+                </div>
+                <div class="max">
+                  <i class="fa-solid fa-users"></i><span>Max : 10</span>
+                </div>
+                <div class="location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Malaysia</span>
+                </div>
+              </div>
+              <div class="details__text">
+                <h3>Tour To Satorini</h3>
+                <p>
+                  Immerse yourself in the allure of a charming locale. A nice place that captivates with its beauty and promises unforgettable moments.
+                </p>
+                <h4>Price: $1300-$1500</h4>
+              </div>
+              <div>
+                <button class="button--primary">Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="button--primary discount__button">
+          See All Packages
+        </button>
+      </section>
+      <!-- customer review section -->
+      <section class="review  pb-50">
+        <i class=" left-side fa-solid fa-angle-left"></i>
+        <i class="fa-solid right-side fa-angle-right"></i>
+        <div class="discount__textbox">
+          <h3>What People Says About Us</h3>
+          <p>
+            Hear from our delighted customers as they share their memorable experiences, making us your trusted choice
+          </p>
+        </div>
+        <img
+          src="https://media.istockphoto.com/id/1485546774/photo/bald-man-smiling-at-camera-standing-with-arms-crossed.jpg?s=1024x1024&w=is&k=20&c=zvw6qDmYHmIvvCbEn2ZUF0tdSbKPnEWRsVAzd9g4hCM="
+          alt=""
+        />
+        <p class="desc">
+          “This theme have great custommer support team than will always try to
+          help me whenever I have trouble on implementing. this theme also have
+          general feature for tour”
         </p>
-        <div class="flex flex-col gap-[18px] justify-center">
-          <a
-            class="link link-hover flex gap-4 items-center font-medium leading-baselead"
-            ><i class="fa-thin fa-envelope text-[#FF4240]"></i>
-            hockeys@support.com</a
-          >
-          <a
-            class="link link-hover flex gap-4 items-center font-medium leading-baselead"
-            ><i class="fa-sharp fa-thin fa-phone text-[#FF4240]"></i> (+62)
-            123-321-543</a
-          >
+        <h3 class="name">BAYUNURAJI</h3>
+        <p class="pos">CUSTOMER</p>
+      </section>
+      <!-- video showcase section -->
+      <article class="article__popular pb-50 pt-50">
+        <div class="article__popular__textbox">
+          <h3>A Simple Perfect Place To Get Lost</h3>
+          <p>
+            Explore scenic beauty, rich culture, and vibrant experiences in this charming destination—a perfect retreat for unforgettable travel memories.
+          </p>
+          <ul class="video__showcase-list">
+            <li>
+              Explore scenic beauty, rich culture, and vibrant experiences in this charming destination—a perfect retreat for unforgettable travel memories.
+            </li>
+            <li>
+              Explore scenic beauty, rich culture, and vibrant experiences in this charming destination—a perfect retreat for unforgettable travel memories.
+            </li>
+          </ul>
+
+          <div><button class="button--primary">See More</button></div>
         </div>
-      </nav>
-      <div class="footer container  flex justify-between lg:gap-16 flex-nowrap">
-        <nav class="max-sm:place-items-center">
-          <header class="text-[18px] text-[#FFF] font-bold mb-7">
-            Company
-          </header>
-
-          <div class="flex flex-col justify-center gap-5 max-sm:items-center">
-            <a class="link link-hover">About us</a>
-            <a class="link link-hover">Leadership</a>
-            <a class="link link-hover">Careers</a>
-            <a class="link link-hover">News & Article</a>
-            <a class="link link-hover">Legal Notice</a>
+        <div class="article__popular__imagebox">
+          <figure class="video--box">
+            <video
+              class="video"
+              poster="./Images/Group 40089.png"
+              controls
+            ></video>
+            <p>Watch Our Mountain in Bangladesh</p>
+          </figure>
+        </div>
+      </article>
+      <!-- newsletter section -->
+      <section class="newsletter pt-50 pb-50">
+        <div class="newsletter_form_box">
+          <h3>Newsletter</h3>
+          <p>Get your daily dose of travel news & tips. Sign up today!</p>
+          <hr />
+          <form class="newsletter_form">
+            <input type="text" placeholder="Enter your name" />
+            <input type="email" placeholder="Enter your email" />
+            <button class="button--primary">Subscribe</button>
+          </form>
+        </div>
+        <div class="newsletter_img">
+          <img src="./Images/Rectangle 18.png" alt="" />
+          <div class="offer_price">
+            <p>Travel.com</p>
+            <h3>Save up to 70%</h3>
           </div>
-        </nav>
-        <nav class="max-sm:place-items-center">
-          <header class="text-[18px] text-[#FFF] font-bold mb-7">
-            Support
-          </header>
+        </div>
+      </section>
+    </main>
 
-          <div class="flex flex-col justify-center gap-5 max-sm:items-center">
-            <a class="link link-hover">Help Center </a>
-            <a class="link link-hover">FAQ</a>
-            <a class="link link-hover">Ticket Support</a>
-            <a class="link link-hover">Contact Us</a>
-          </div>
-        </nav>
+    <!-- footer section -->
+    <footer class="pt-50">
+      <div class="footer_content">
+        <div class="footer__logo">
+          <img src="./Images/icon.png" alt="nav icon" />
+          <h5>Edge <span>Tour</span></h5>
+        </div>
+        <p class="footer_content__text">
+          Your gateway to extraordinary journeys. Explore, discover, and make memories with our curated experiences. Your dream adventure awaits. Start your journey today!
+        </p>
+        <div class="logo__box">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
       </div>
-      <nav class="max-sm:place-items-center max-sm:mx-auto">
-        <header class="text-[18px] text-[#FFF] font-bold mb-7">Services</header>
-
-        <div class="flex flex-col justify-center gap-5 max-sm:items-center">
-          <a class="link link-hover">Academy </a>
-          <a class="link link-hover ">Group Lesson</a>
-          <a class="link link-hover">Private Lesson</a>
-          <a class="link link-hover">Hockeys for kids</a>
-          <a class="link link-hover">Hockeys for Adult</a>
-        </div>
-      </nav>
+      <hr />
+      <p class="copyright">2017, All Rights Reserved.</p>
     </footer>
   </body>
 </html>
