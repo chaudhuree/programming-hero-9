@@ -1,61 +1,37 @@
-import { useState, useEffect } from "react";
-import Nav from "./components/navbar/Nav";
-import Hero from "./components/hero/Hero";
-import Shop from "./components/shop/Shop";
-import { toast } from "react-toastify";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import PrivateRoute from "./components/PrivateRoute";
+import ForgotPassword from "./pages/ForgotPassword";
+import Home from "./pages/Home";
+import Profile from "./pages/Profile";
+import Register from "./pages/Register";
+import SignIn from "./pages/SignIn";
+import Footer from "./components/Footer";
+import SingleProperty from "./pages/SingleProperty";
+import Properties from "./pages/Properties";
+import NotFound from "./pages/NotFound";
 function App() {
-  const [recipes, setRecipes] = useState([]);
-  const [wantToCookRecipes, setWantToCookRecipes] = useState([]);
-  const [currentlyCookingRecipes, setCurrentlyCookingRecipes] = useState([]);
-
-  useEffect(() => {
-    getRecipes();
-  }, []);
-
-  const getRecipes = async () => {
-    const response = await fetch("recipes.json");
-    const data = await response.json();
-    setRecipes(data);
-  };
-  const handleWantToCook = (recipe) => {
-    if (!wantToCookRecipes.find((r) => r.recipe_id === recipe.recipe_id)) {
-      setWantToCookRecipes([...wantToCookRecipes, recipe]);
-    } else {
-      toast.error("Recipe already selected!");
-    }
-  };
-
-  const handlePreparing = (recipe) => {
-    setWantToCookRecipes((wantToCookRecipes) =>
-      wantToCookRecipes.filter((r) => r.recipe_id !== recipe.recipe_id)
-    );
-    setCurrentlyCookingRecipes([...currentlyCookingRecipes, recipe]);
-  };
-  let totalTime = currentlyCookingRecipes.reduce(
-    (acc, recipe) => acc + +recipe.preparing_time,
-    0
-  );
-  let totalCalories = currentlyCookingRecipes.reduce(
-    (acc, recipe) => acc + +recipe.calories,
-    0
-  );
-  let calculationSummary = {
-    totalTime: totalTime,
-    totalCalories: totalCalories,
-  };
   return (
-    <div className="max-md:px-2">
-      <Nav />
-      <Hero />
-      <Shop
-        recipes={recipes}
-        handleWantToCook={handleWantToCook}
-        handlePreparing={handlePreparing}
-        wantToCookRecipes={wantToCookRecipes}
-        currentlyCookingRecipes={currentlyCookingRecipes}
-        calculationSummary={calculationSummary}
-      />
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/forgotpassword" element={<ForgotPassword />} />
+        <Route path="/properties" element={<PrivateRoute />}>
+          <Route path="/properties" element={<Properties />} />
+        </Route>
+        <Route path="/profile" element={<PrivateRoute />}>
+          <Route path="/profile" element={<Profile />} />
+        </Route>
+        <Route path="/property/:id" element={<PrivateRoute />}>
+          <Route path="/property/:id" element={<SingleProperty />} />
+        </Route>
+        <Route path="*" element={<NotFound/>} />
+      </Routes>
+      <Footer />
+    </>
   );
 }
 
